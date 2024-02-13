@@ -28,5 +28,4 @@ public abstract class Employee {
 		else
 			return 0.2;
 	}
-
 }
