@@ -1,4 +1,4 @@
-public class TaxPaymentTesting {
+public class TaxPaymentTest {
 	public static void main(String[] args) {
 		// Ex5 Part A)
 		FullTime employee01_FullTime = new FullTime("Erika Parker", "secretary", "InfoTech", 32500.00);
@@ -11,19 +11,15 @@ public class TaxPaymentTesting {
 		employee02_PartTime.printInfo(); //Brian Lee
 		employee03.printInfo(); //James Knein 
 		employee04.printInfo(); //Anne Lin  
-		?? employee05_TaxPayer ??.printInfo(); //Jamie Fox, try casting
+		((FullTime) employee05_TaxPayer).printInfo(); //Jamie Fox, try casting
 
 
 		// Ex5 Part b) 
 		// Without changing the class-types declaration of the following variables:
 		// what do you need to do to be able to call payTax() of ft, pt, and t1. (Hint: casting)
-		/*
-		 * employee03.payTax(); 
-		 * employee04.payTax(); 
-		 * employee05_TaxPayer.payTax();
-		 * 
-		 */
-		
+		((FullTime) employee03).payTax(); 
+		((PartTime) employee04).payTax(); 
+		((FullTime) employee05_TaxPayer).payTax();
 
 	}
 }
