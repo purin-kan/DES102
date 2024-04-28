@@ -23,9 +23,10 @@ public class KeyboardEvent extends JPanel implements KeyListener{
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-		text = text + e.getKeyChar();
+		text += e.getKeyChar();
 		repaint();
 	}
+
 
 	@Override
 	public void keyPressed(KeyEvent e) {
